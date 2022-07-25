@@ -2,12 +2,12 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div>
-      <div className="py-20 px-3">
-        <p className="text-[#6a4aa1] text-4xl lg:text-5xl font-bold lg:w-[1000px] pb-10 lg:mx-auto">
+    <div className="">
+      <div className="py-20 md:px-14 lg:max-w-6xl mx-auto px-10">
+        <p className="text-[#6a4aa1] text-4xl lg:text-5xl font-bold pb-10 lg:mx-auto">
           About us
         </p>
-        <div className="lg:flex lg:w-[1000px] mx-auto ">
+        <div className="lg:flex mx-auto w-full">
           <div className="bg-[rgb(242,242,242)] lg:w-4/5 p-10">
             <p className="text-xl leading-9">
               We help you get smarter with how and what you eat with our top 10

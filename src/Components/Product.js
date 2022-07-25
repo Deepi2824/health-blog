@@ -76,9 +76,9 @@ const Product = () => {
     },
   ];
   return (
-    <div className="lg:w-[1200px] lg:mx-auto lg:flex lg:py-10 gap-5">
-      <div className="lg:w-1/3 lg:my-10 mx-auto p-5">
-        <h1 className="font-bold lg:text-[2.25rem] text-2xl mb-5">
+    <div className="md:max-w-7xl md:mx-auto md:py-10 grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 p-5 sm:gap-5">
+      <div className="md:my-10 p-5 lg:col-span-2">
+        <h1 className="font-bold md:text-[2.25rem] text-2xl mb-5">
           Weight Loss Linked To Healthy Eating
         </h1>
         <p className="text-lg font-normal pb-5">
@@ -90,23 +90,23 @@ const Product = () => {
           READ MORE
         </button>
       </div>
-      <div className="lg:w-2/3 lg:flex gap-3 text-white p-5">
+      {/* <div className="md:w-2/3 md:flex gap-3 text-white p-5"> */}
         {data.map((x) => (
           <div
-            className={`flex flex-col gap-5 mb-7 ${
+            className={`flex flex-col gap-5 mb-7 sm:p-5 lg:py-5 lg:px-0 ${
               x.title === "Over 300 food products"
                 ? "bg-[#6a4aa1]"
                 : x.title === "Only natural products"
                 ? "bg-[#d01e55]"
                 : "bg-[#292d33]"
-            } lg:mx-4 py-10`}
+            } py-10 text-white`}
           >
             <div className="mx-auto">{x.image} </div>
             <div className="text-2xl font-bold text-center lg:px-3">{x.title}</div>
             <div className="text-center">{x.description}</div>
           </div>
         ))}
-      </div>
+      {/* </div> */}
     </div>
   );
 };

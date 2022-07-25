@@ -40,7 +40,7 @@ export const Email = () => {
     },
   ];
   return (
-    <div>
+    <div className="w-full">
       <div className="relative">
         <img
           className="lg:h-[680px] w-full object-cover"
@@ -53,17 +53,17 @@ export const Email = () => {
           <button className="w-full px-[12px] py-[10px] text-white font-semibold tracking-widest bg-[#6a4aa1]">SUBMIT</button>
         </div>
       </div>
-      <div className="bg-[#6a4aa1] text-white p-10">
-        <p className="text-center text-5xl font-bold pt-14">Top tips from the experts</p>
-        <div className="grid lg:grid-cols-3 lg:grid-rows-2 gap-6 lg:w-[1200px] mx-auto items-center py-20">
+      <div className="bg-[#6a4aa1] text-white p-10 w-full">
+        <p className="text-center text-5xl font-bold lg:pt-14">Top tips from the experts</p>
+        <div className="grid lg:grid-cols-3 lg:grid-rows-2 sm:grid-cols-2 sm:grid-rows-3 gap-6 lg:max-w-7xl mx-auto items-center py-10 lg:py-20">
           {food.map((z) => (
-            <div className="flex flex-col gap-3 lg:gap-5 ">
+            <div className="flex flex-col gap-3 md:gap-5 ">
               <div className="flex gap-2">
                 <img className="w-12 object-contain" src={z.image} alt="food" />
-                <p className="text-2xl font-bold lg:px-10">{z.title}</p>
+                <p className="text-2xl font-bold xl:px-10">{z.title}</p>
               </div>
 
-              <p className="lg:px-10 px-2 ml-12 italic sm:text-lg ">{z.description}</p>
+              <p className="xl:px-12 px-2 ml-12 italic md:text-base sm:text-lg ">{z.description}</p>
             </div>
           ))}
         </div>

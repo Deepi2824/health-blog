@@ -2,8 +2,8 @@ import React from "react";
 
 function LogoSection() {
   return (
-    <div>
-      <div className=" flex justify-between items-center px-10 lg:px-24 py-5">
+    <div className="">
+      <div className="flex justify-between items-center px-10 lg:px-24 py-5">
         <div className="w-16">
           <img src="/assets/default-logo.png" alt="logo" />
         </div>
@@ -31,7 +31,7 @@ function LogoSection() {
           src="/assets/banner-image.jpeg"
           alt="bannerimage"
         />
-        <div className="absolute text-white top-10 lg:w-[520px] lg:right-[13%] w-full p-10">
+        <div className="absolute text-white top-10 lg:w-[520px] lg:right-[13%] p-10">
           <h1 className="font-bold text-[6.25rem]">health</h1>
           <h2 className="font-bold text-xl mb-6">
             Time to Get Healthy & Active
